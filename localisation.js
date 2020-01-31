@@ -49,14 +49,18 @@ function dynamicLoadPlaces(position) {
   var posLat  = position.latitude  + 0.00010
   var posLong = position.longitude + 0.00010
 
+	console.log("posLat : "+posLat);
+	console.log("posLong : "+posLong);
+	console.log("position.latitude : "+position.latitude);
+	console.log("position.longitude : "+position.longitude);
+	
   // Foursquare API
   let endpoint = `https://overpass.openstreetmap.fr/api/interpreter?data=[out:json];node(${position.latitude},${position.longitude},${posLat},${posLong});node(around:1000)[amenity=bar];out;`;
-  console.log(endpoint);
+  console.log("endpoint : "+endpoint);
   return fetch(endpoint)
       .then((res) => {
           return res.json()
               .then((resp) => {
-                console.log(resp.elements);
                   return resp.elements;
               })
       })
