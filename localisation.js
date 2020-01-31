@@ -56,7 +56,7 @@ function dynamicLoadPlaces(position) {
       .then((res) => {
           return res.json()
               .then((resp) => {
-                // console.log(resp.elements);
+                console.log(resp.elements);
                   return resp.elements;
               })
       })
