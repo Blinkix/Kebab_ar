@@ -49,18 +49,14 @@ function dynamicLoadPlaces(position) {
   var posLat  = position.latitude  + 0.00010
   var posLong = position.longitude + 0.00010
 
-	console.log("posLat : "+posLat);
-	console.log("posLong : "+posLong);
-	console.log("position.latitude : "+position.latitude);
-	console.log("position.longitude : "+position.longitude);
-	
   // Foursquare API
-  let endpoint = `https://overpass.openstreetmap.fr/api/interpreter?data=[out:json];node(${position.latitude},${position.longitude},${posLat},${posLong});node(around:1000)[amenity=fast_food];out;`;
-  console.log("endpoint : "+endpoint);
+  let endpoint = `https://overpass.openstreetmap.fr/api/interpreter?data=[out:json];node(${position.latitude},${position.longitude},${posLat},${posLong});node(around:5000)[amenity=fast_food];out;`;
+  console.log(endpoint);
   return fetch(endpoint)
       .then((res) => {
           return res.json()
               .then((resp) => {
+                // console.log(resp.elements);
                   return resp.elements;
               })
       })
@@ -84,12 +80,11 @@ function renderPlaces(places) {
       // text.setAttribute('gltf-model', './Assets/GLTF/toilet2.gltf');
       // text.setAttribute('scale', '45 45 45');
       // text.setAttribute('title', place.tags.name);
-  
-  
+
 
       let text = document.createElement('a-text');
       text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-      text.setAttribute('gltf-model', './Assets/GLTF/toilet2.gltf');
+      text.setAttribute('gltf-model', './Assets/GLTF/burger.gltf');
       text.setAttribute('scale', '45 45 45');
       text.setAttribute('name', place.tags.name);
       //text.setAttribute('color', 'black');
@@ -98,7 +93,7 @@ function renderPlaces(places) {
 
       let model = document.createElement('a-entity');
       model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-      model.setAttribute('gltf-model', './Assets/GLTF/toilet2.gltf');
+      model.setAttribute('gltf-model', './Assets/GLTF/burger.gltf');
       model.setAttribute('scale', '45 45 45');
       if (place.tags.name === undefined )
       {

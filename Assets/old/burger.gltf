@@ -1,0 +1,234 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5123,
+            "count" : 198126,
+            "max" : [
+                41450
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 41451,
+            "max" : [
+                113.95022583007812,
+                169.80862426757812,
+                112.2748794555664
+            ],
+            "min" : [
+                -116.96845245361328,
+                -0.25034666061401367,
+                -115.64399719238281
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 41451,
+            "max" : [
+                0.999969482421875,
+                1.0,
+                0.999969482421875
+            ],
+            "min" : [
+                -0.999969482421875,
+                -0.999969482421875,
+                -1.0
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 41451,
+            "max" : [
+                1.0,
+                0.9999986290931702,
+                0.9999841451644897,
+                1.0
+            ],
+            "min" : [
+                -0.9999988079071045,
+                -0.9999847412109375,
+                -0.9999992251396179,
+                -1.0
+            ],
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 41451,
+            "max" : [
+                0.9607477188110352,
+                0.9864451885223389
+            ],
+            "min" : [
+                0.024187395349144936,
+                0.026410579681396484
+            ],
+            "type" : "VEC2"
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 396252,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 497412,
+            "byteOffset" : 396252,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 497412,
+            "byteOffset" : 893664,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 663216,
+            "byteOffset" : 1391076,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 331608,
+            "byteOffset" : 2054292,
+            "target" : 34962
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 2385900,
+            "uri" : "burger.bin"
+        }
+    ],
+    "images" : [
+        {
+            "name" : "Big Mac UV 3",
+            "uri" : "Big Mac UV 3.jpg"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "Mat_1",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1.0
+                ],
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0.0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "big_mac_",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2,
+                        "POSITION" : 1,
+                        "TANGENT" : 3,
+                        "TEXCOORD_0" : 4
+                    },
+                    "indices" : 0,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "big_mac_",
+            "rotation" : [
+                2.2002573096813194e-09,
+                -0.10182983428239822,
+                -4.5521481029098254e-10,
+                0.994801938533783
+            ],
+            "scale" : [
+                0.5251001715660095,
+                0.5393000245094299,
+                0.5587000846862793
+            ],
+            "translation" : [
+                0.0,
+                0.0,
+                -1.9073486328125e-06
+            ]
+        },
+        {
+            "children" : [
+                2
+            ],
+            "name" : "big_mac_4_low_poly",
+            "scale" : [
+                0.30000001192092896,
+                0.30000001192092896,
+                0.30000001192092896
+            ],
+            "translation" : [
+                -0.11822891235351562,
+                -0.7623052597045898,
+                -6.144178867340088
+            ]
+        },
+        {
+            "children" : [
+                0
+            ],
+            "name" : "Group",
+            "scale" : [
+                1.0,
+                1.0579999685287476,
+                1.0
+            ],
+            "translation" : [
+                0.0,
+                0.0,
+                -1.9073486328125e-06
+            ]
+        }
+    ],
+    "samplers" : [
+        {}
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Burger",
+            "nodes" : [
+                1
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ]
+}
