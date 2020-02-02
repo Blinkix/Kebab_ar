@@ -1,5 +1,9 @@
 # Kebab_ar
 
+## Pré requis
+
+Il est préférable de tester notre application sur mobile
+
 ## Installation en local
 lancer la commande pour telecharger les packets node
 ```
