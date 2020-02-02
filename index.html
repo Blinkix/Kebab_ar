@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>GeoAR.js demo</title>
+    <title>UI_UX</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./favicon.ico" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
 
-    <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
-    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
-    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script>
-        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
-    </script>
-    <script src="./localisation.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </head>
+<body style="background-image: url('./src/fond.jpg');background-repeat: no-repeat;background-size:cover;width: 100%;">
+    <img src="./src/logo.png" class="rounded float-right" alt="..." style="width: 150px;margin-top: -120px;">
 
-<body style='margin: 0; overflow: hidden;'>
-    <a-scene
-        cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
-        raycaster="objects: [gps-entity-place];"
-        vr-mode-ui="enabled: false"
-		embedded
-        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        <!-- <a-assets>
-          <a-asset-item id="monkey" src="./Assets/GLTF/toilet.gltf"></a-asset-item>
-        </a-assets> -->
-        <!-- <a-box rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 4.806534; latitude: 45.769974;" position='0 0.5 0' material='color: red;'></a-box> -->
-        <!-- <a-entity gps-entity-place="longitude: 4.806534; latitude: 45.769974;" scale='1 1 1' gltf-model="#monkey"></a-entity> -->
-        <a-camera gps-camera rotation-reader></a-camera>
-        <a-assets>
-            <a-asset-item id="burger" src="./Assets/GLTF/burger.gltf"></a-asset-item>
-          </a-assets>        
-  </a-scene>
-  <!-- position EPSI gps-entity-place="longitude: 4.806534; lati
-    
-    tude: 45.769974;" -->
+    <div class="container">
+        <div class="row" style="text-align: center;margin-top: 15%;">
+            <span style="color: red;text-align: center;width: 100%;"><h1 class="display-1">SOS Kebab</h1></span>
+        </div>
+        <div class="row" style="text-align: center;margin-top: 15%;">
+            <span style="color: red;text-align: center;width: 100%;"><h3 class="display-3">Choisissez quoi manger</h3></span>
+        </div>
+        <div class="row" style="margin-top: 15%;">
+            <div class="col-sm-12">
+                <a href="./camera.html"><img src="./src/bouton hamburger.png" class="rounded float-left" alt="..."></a>
+                <a href="./camera.html"><img src="./src/bouton kebab.png" class="rounded float-right" alt="..."></a>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="./camera.html"><img src="./src/bouton nuggets.png" class="rounded float-left" alt="..."></a>
+                <a href="./camera.html"><img src="./src/bouton panini.png" class="rounded float-right" alt="..."></a>
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="./camera.html"><img src="./src/bouton pizza.png" class="rounded float-left" alt="..."></a>
+                <a href="./camera.html"><img src="./src/bouton tacos.png" class="rounded float-right" alt="..."></a>
+            </div>
+        </div> 
+      </div>
 </body>
+
+</html>

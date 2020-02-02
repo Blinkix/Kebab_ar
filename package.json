@@ -4,6 +4,7 @@
   "description": "Webpack boilerplate for ThreeJS/OpenCV development",
   "main": "src/index.js",
   "dependencies": {
+    "nodemon": "^2.0.2",
     "webpack": "^4.41.3"
   },
   "devDependencies": {

@@ -82,18 +82,19 @@ function renderPlaces(places) {
       // text.setAttribute('title', place.tags.name);
 
 
-      let text = document.createElement('a-text');
-      text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-      text.setAttribute('gltf-model', './Assets/GLTF/burger.gltf');
-      text.setAttribute('scale', '45 45 45');
-      text.setAttribute('name', place.tags.name);
+      // let text = document.createElement('a-text');
+      // text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+      // text.setAttribute('gltf-model', './Assets/GLTF/burger/burger.gltf');
+      // text.setAttribute('scale', '45 45 45');
+      // text.setAttribute('name', place.tags.name);
+      
       //text.setAttribute('color', 'black');
            
       
 
       let model = document.createElement('a-entity');
       model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-      model.setAttribute('gltf-model', './Assets/GLTF/burger.gltf');
+      model.setAttribute('gltf-model', './Assets/GLTF/burger/burger.gltf');
       model.setAttribute('scale', '45 45 45');
       if (place.tags.name === undefined )
       {
@@ -105,7 +106,7 @@ function renderPlaces(places) {
         
         
       model.setAttribute('name', namePlace);
-      
+      model.setAttribute('title', namePlace);
       model.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
 
         const clickListener = function (ev) {

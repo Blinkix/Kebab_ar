@@ -1,6 +1,9 @@
 span {
     margin-right: 0.5em;
 }
+#starter{
+    background-image: url("./src/fond.jpg");
+}
 
 div.debug {
     position: fixed;
